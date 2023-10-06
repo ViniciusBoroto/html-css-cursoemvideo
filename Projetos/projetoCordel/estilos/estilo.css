@@ -15,42 +15,59 @@
     font-family: var(--fonte3);  
 }
 
+/* --HEADER-- */
+
 header {
     background-color: black;
     color: white;
-    padding: 75px;
+    padding: 45px;
+    margin-bottom: 60px;
 }
-header h1 {
-    font-size: 85px;
+
+header h1, header h1 > * {
+    font-size: 45px;
     text-align: center;
     font-family: var(--fonte2);
-    font-weight: bolder;
+    padding: 0;
 }
+
+header h1 strong {
+    font-size: 70px;
+}
+
 header p, header p > * {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
     font-family: var(--fonte1);
-    font-weight: 100;
+    font-weight: lighter;
+    margin-top: -2px;
+    padding-bottom: 8px;
 }
 header a {
     text-decoration: none;
     color: white;
-    font-weight: bolder;
+    font-weight: 1000;
+    font-size: 16px;
+    font-family: var(--fonte1);
 }
+
 header a:hover {
     text-decoration: underline;
 }
+
+/* --MAIN-- */
+
 main > section > * {
-    font-size: 5vw;
-    line-height: 1.5em;
+    font-size: 3.5vw;
+    line-height: 2em;
 }
 
 main section > p {
-    margin: 50px 25px;
+    margin: 35px 25px;
 }
 
 .quadro-preto {
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(0, 0, 0, 0.548);
     width: fit-content;
     padding: 5px;
 }
@@ -60,14 +77,35 @@ main section > p {
 }
 
 .bg-pic {
-    padding: 100px 30px;
-    
-    
+    padding: 60px 30px;
+    margin-top: 110px;
+    margin-bottom: 70px;
 }
 
 #bg-joaninha {
     background-image: url(../imagens/background001.jpg);
-    background-size: cover;
+    background-position: center right;
     background-attachment: fixed;
-    background-position: center center;
+    background-size: auto 100%;
+}
+
+#bg-papel {
+    background-image: url(../imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: 200vh;
+}
+
+footer {
+    font-family: var(--fonte1);
+    margin-top: 125px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+footer a {
+    font-family: var(--fonte1);
+    color: white;
+    text-decoration: none;
+    font-weight: 1000;
 }
