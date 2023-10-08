@@ -25,14 +25,14 @@ header {
 }
 
 header h1, header h1 > * {
-    font-size: 2.8rem;
+    font-size: 7vw;
     text-align: center;
     font-family: var(--fonte2);
     padding: 0;
 }
 
 header h1 strong {
-    font-size: 4rem;
+    font-size: 1.5em;
 }
 
 header p, header p > * {
@@ -82,7 +82,7 @@ section {
 }
 
 section > p {
-    margin-bottom: 45px;
+    margin-bottom: 7vw;
 }
 
 .bg-pic {
@@ -111,7 +111,7 @@ footer {
     color: white;
     background-color: black;
     padding: 10px;
-    margin-top: -20px;
+    margin-top: -45px;
 }
 footer a {
     font-family: var(--fonte1);
