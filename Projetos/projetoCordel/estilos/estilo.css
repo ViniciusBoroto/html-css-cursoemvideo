@@ -21,7 +21,6 @@ header {
     background-color: black;
     color: white;
     padding: 46px;
-    margin-bottom: -50px;
 }
 
 header h1, header h1 > * {
@@ -62,47 +61,47 @@ main > section > * {
     line-height: 2em;
 }
 
-main section {
-    padding: 113px 25px 93px 25px;
-    
+/* White section */
+
+.whiteBackground {
+    margin: 10vh 5vw 15vh 5vw;
 }
 
-.quadro-preto {
+.whiteBackground > p {
+    margin-top: 5vh;
+}
+
+/* Image background section */
+
+.black-frame {
     background-color: rgba(0, 0, 0, 0.548);
     width: fit-content;
     padding: 5px;
 }
-.quadro-preto > * {
+
+.black-frame > * {
     color: white;
-
-}
-
-section {
-    padding: 20px;
-}
-
-section > p {
-    margin-bottom: 7vw;
 }
 
 .bg-pic {
-    margin-bottom: -50px;
+    padding: 10vh 0px 10vh 4vw;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 #bg-joaninha {
     background-image: url(../imagens/background001.jpg);
     background-position: center right;
     background-attachment: fixed;
-    background-size: auto 100vw;
+    background-size: cover;
 }
 
 #bg-papel {
     background-image: url(../imagens/background002.jpg);
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
-/* FOOTER */
+/* --FOOTER-- */
 
 footer {
     font-family: var(--fonte1);
@@ -110,7 +109,7 @@ footer {
     color: white;
     background-color: black;
     padding: 10px;
-    margin-top: -45px;
+    margin-top: 18vh;
 }
 footer a {
     font-family: var(--fonte1);
