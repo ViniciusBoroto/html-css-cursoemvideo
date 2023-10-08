@@ -86,7 +86,6 @@ section > p {
 }
 
 .bg-pic {
-    padding: 65px 30px;
     margin-bottom: -50px;
 }
 
@@ -94,13 +93,13 @@ section > p {
     background-image: url(../imagens/background001.jpg);
     background-position: center right;
     background-attachment: fixed;
-    background-size: auto 100%;
+    background-size: auto 100vw;
 }
 
 #bg-papel {
     background-image: url(../imagens/background002.jpg);
     background-attachment: fixed;
-    background-size: 200vh;
+    background-size: 100%;
 }
 
 /* FOOTER */
