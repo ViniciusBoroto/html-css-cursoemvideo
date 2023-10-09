@@ -12,7 +12,12 @@
 
 * {
     margin: 0px;
+    padding: 0px;
     font-family: var(--fonte3);  
+}
+
+html, body {
+    min-height: 100vh;
 }
 
 /* --HEADER-- */
@@ -42,7 +47,7 @@ header p, header p > * {
     margin-top: -2px;
     padding-bottom: 8px;
 }
-header a {
+header a, footer a {
     text-decoration: none;
     color: white;
     font-weight: 1000;
@@ -50,7 +55,7 @@ header a {
     font-family: var(--fonte1);
 }
 
-header a:hover {
+header a:hover, footer a:hover {
     text-decoration: underline;
 }
 
@@ -61,6 +66,9 @@ main > section > * {
     line-height: 2em;
 }
 
+main pre {
+    white-space: pre-line;
+}
 /* White section */
 
 .whiteBackground {
