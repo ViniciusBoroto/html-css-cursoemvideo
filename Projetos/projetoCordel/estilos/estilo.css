@@ -28,8 +28,9 @@ header {
     padding: 46px;
 }
 
-header h1, header h1 > * {
-    font-size: 7vw;
+header h1 {
+    font-variant: small-caps;
+    font-size: 10vw;
     text-align: center;
     font-family: var(--fonte2);
     padding: 0;
@@ -44,7 +45,6 @@ header p, header p > * {
     font-size: 16px;
     font-family: var(--fonte1);
     font-weight: lighter;
-    margin-top: -2px;
     padding-bottom: 8px;
 }
 header a, footer a {
@@ -72,11 +72,11 @@ main pre {
 /* White section */
 
 .whiteBackground {
-    margin: 10vh 5vw 15vh 5vw;
+    margin: 10vh 5vw 10vh 5vw;
 }
 
 .whiteBackground > p {
-    margin-top: 5vh;
+    padding: 0px 0px 5vh 0px;
 }
 
 /* Image background section */
