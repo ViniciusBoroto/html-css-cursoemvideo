@@ -89,24 +89,23 @@ main pre {
 
 .black-frame > * {
     color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .bg-pic {
     padding: 10vh 0px 10vh 4vw;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 #bg-joaninha {
     background-image: url(../imagens/background001.jpg);
-    background-position: center right;
-    background-attachment: fixed;
-    background-size: cover;
+    background-position: right center;
 }
 
 #bg-papel {
     background-image: url(../imagens/background002.jpg);
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 /* --FOOTER-- */
