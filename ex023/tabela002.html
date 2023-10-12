@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 5vh auto;
+        }
+
+        table caption {
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: rgb(189, 189, 189);
+            border-radius: 10px 10px 0px 0px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: rgb(53, 53, 53);
+            color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        } 
+
+        td.number {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>População por estado no Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="number">44 420 459</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="number">20 538 718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="number">16 054 524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="number">14 136 417</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>95 454 351</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
