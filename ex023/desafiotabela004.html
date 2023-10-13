@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4 de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            margin: 50px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        th.whitebg-boldfont {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        td.grade {
+            text-align: center;
+        }
+        
+        th, td {
+            border: 1px solid black;
+        }
+
+        thead th {
+            padding: 5px 20px;
+        }
+
+        col.cnotas {
+            text-align: center;
+        }
+        
+        th, td.strong {
+            background-color: rgb(134, 134, 134);
+            color: white;
+            font-weight: bold;
+        }
+
+        th.mean {
+            text-align: left;
+        }
+
+        .cnotas {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="careas">
+            <col class="cdisciplinas">
+            <col class="cnotas" span="3">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2" style="width: 100px;">Área</th>
+                <th scope="col" rowspan="2" style="width: 120px;">Disciplina</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota1</th>
+                <th>Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4" class="whitebg-boldfont">Exatas</th>
+                <td>Matemática</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="mean">Média de exatas</th>
+                <td class="strong grade">0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2" class="whitebg-boldfont">Humanas</th>
+                <td>História</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+                <td class="grade">0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" colspan="4" class="mean">Média de Humanas</th>
+                <td class="strong grade">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
