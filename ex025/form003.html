@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        
+        div {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça login no site</h1>
+    <form action="" method="get" autocomplete="on">
+        <div>
+            <label for="usernameID">Nome de usuário: </label>
+            <input type="text" name="usernameName" id="usernameID" required minlength="3" maxlength="20" autocomplete="username" placeholder="Nome de usuário">
+        </div>
+        <div>
+            <label for="passwordID">Senha: </label>
+            <input type="password" name="" id="passwordID" required size="15" minlength="4" maxlength="20" autocomplete="current-password" placeholder="Senha">
+        </div>
+        <div>
+            <label for="ageID">Idade: </label>
+            <input type="number" name="ageName" id="ageID" min="0" max="150" placeholder="Idade">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
