@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 4</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 5px;
+        }
+
+        fieldset {
+            border-radius: 15px;
+            padding: 20px;
+        }
+        
+        legend {
+            margin-left: 10px;
+            font-size: 1.3em;
+            background-color: rgba(197, 197, 197, 0.562);
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        .textbox {
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .btn {
+            border-radius: 10px;
+            padding: 5px 10px;
+            font-weight: bolder;
+            background-color: rgb(0, 255, 0);
+        }
+
+        .btn#reset {
+            background-color: rgb(255, 153, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados</legend>
+            <div>
+                <label for="emailInputID">Email</label>
+                <input type="email" name="emailInputN" id="emailInputID" autocomplete="email" class="textbox">
+            </div>
+            <div>
+                <label for="telInputID">Telefone</label>
+                <input type="tel" name="telInputN" id="telInputID" autocomplete="tel" class="textbox">
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR" class="btn">
+                <input type="reset" value="LIMPAR" class="btn" id="reset">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
