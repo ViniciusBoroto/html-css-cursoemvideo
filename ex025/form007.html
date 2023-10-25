@@ -10,7 +10,33 @@
     <form action="">
         <div>
             <label for="estadoID">Estado</label>
-            <select name="" id="estadoID"></select>
+            <select name="" id="estadoID">
+                <option value="select">~~Escolha~~</option>
+                <optgroup label="Região Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="BA">Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                </optgroup>
+            </select>
+        </div>
+        <div>
+            <label for="profListInput">Qual sua profissão?</label>
+            <input type="text" name="" id="profListInput" list="profList">
+            <datalist id="profList">
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+                <option>Cozinheiro</option>
+                <option>Encanador</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="textareaID">Mensagem:</label> <br>
+            <textarea name="" id="textareaID" cols="30" rows="10"></textarea>
         </div>
     </form>
 </body>
