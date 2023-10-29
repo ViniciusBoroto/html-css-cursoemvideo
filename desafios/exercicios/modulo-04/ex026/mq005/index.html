@@ -4,21 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto teste media query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
+        <span id="hamburger-icon" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menuOptions">
             <ul>
-                <a href="#">Opção 1</a>
-                <a href="#">Opção 2</a>
-                <a href="#">Opção 3</a>
-                <a href="#">Opção 4</a>
-                <a href="#">Opção 5</a>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
             </ul>
-        </nav>
+        </menu>
     </header>
     <main>
         <h1>Testando Media Queries</h1>
@@ -26,5 +28,14 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, veniam sapiente maxime, officiis minus nisi ullam vero, maiores enim culpa quisquam nihil fuga soluta accusamus. Vel dolorem possimus veniam reiciendis.</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci cupiditate sit nobis facere culpa veritatis voluptate minus. Perspiciatis sint a voluptatum vel repellat iste sapiente ullam dicta vitae! Beatae, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt quidem facere voluptatum laborum, autem fugit unde inventore suscipit odit tempora nulla perspiciatis et maxime labore commodi dolorem eligendi quia.</p>
     </main>
+    <script>
+        function clickMenu() {
+            if (menuOptions.style.display == 'block') {
+                menuOptions.style.display = 'none'
+            } else {
+                menuOptions.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
