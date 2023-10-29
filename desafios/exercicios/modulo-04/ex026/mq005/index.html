@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
 </head>
-<body>
+<body onresize="resized()">
     <header>
         <h1>Meu Site</h1>
         <span id="hamburger-icon" class="material-icons" onclick="clickMenu()">menu</span>
@@ -29,6 +29,15 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci cupiditate sit nobis facere culpa veritatis voluptate minus. Perspiciatis sint a voluptatum vel repellat iste sapiente ullam dicta vitae! Beatae, sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates incidunt quidem facere voluptatum laborum, autem fugit unde inventore suscipit odit tempora nulla perspiciatis et maxime labore commodi dolorem eligendi quia.</p>
     </main>
     <script>
+
+        function resized() {
+            if (window.innerWidth >= 768) {
+                menuOptions.style.display ='block'
+            } else {
+                menuOptions.style.display = 'none'
+            }
+        }
+
         function clickMenu() {
             if (menuOptions.style.display == 'block') {
                 menuOptions.style.display = 'none'
